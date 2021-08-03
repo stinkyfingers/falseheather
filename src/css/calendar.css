@@ -1,0 +1,14 @@
+.calendar {
+  text-align: left;
+}
+
+.calendar > table {
+  background-color: rgba(0,0,0,.5);
+  color: #eee;
+
+  margin: auto;
+}
+
+.calendar td, th{
+  padding: .5em;
+}

@@ -1,5 +1,6 @@
 import React  from 'react';
 import { getEvents } from '../api';
+import '../css/calendar.css';
 
 const Calendar = () => {
   const [events, setEvents] = React.useState([]);
@@ -28,11 +29,14 @@ const Calendar = () => {
       <tr className='event' key={e.id}>
         <td>{e.summary}</td>
         <td>{formatDate(e.start.dateTime, e.end.dateTime)}</td>
+        <td>{e.description}</td>
       </tr>))
       return <table>
         <thead>
           <tr>
             <th>Event</th>
+            <th>Date</th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>

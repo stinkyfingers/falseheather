@@ -1,0 +1,26 @@
+.header {
+  background-color: #000;
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 10%;
+  min-width: 100px;
+}
+
+.link {
+  padding: 3em;
+}
+
+.link:link, .link:visited, .link:active {
+  color: #eee;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}

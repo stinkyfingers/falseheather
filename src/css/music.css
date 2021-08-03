@@ -1,0 +1,13 @@
+.music {
+  text-align: left;
+}
+
+.music > table {
+  background-color: rgba(0,0,0,.5);
+  color: #eee;
+  margin: auto;
+}
+
+.music td, th{
+  padding: .5em;
+}
