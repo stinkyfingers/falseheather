@@ -1,13 +1,19 @@
 .music {
   text-align: left;
-}
-
-.music > table {
-  background-color: rgba(0,0,0,.5);
-  color: #eee;
-  margin: auto;
+  display: inline-block;
 }
 
 .music td, th{
   padding: .5em;
+}
+
+a:link, a:visited, a:active {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
 }

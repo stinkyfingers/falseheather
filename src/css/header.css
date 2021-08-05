@@ -11,7 +11,8 @@
 }
 
 .link {
-  padding: 3em;
+  padding: 1em;
+  font-size: 2em;
 }
 
 .link:link, .link:visited, .link:active {

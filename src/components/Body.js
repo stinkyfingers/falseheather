@@ -8,15 +8,20 @@ import '../css/body.css';
 const Body = () => {
   return (
     <div className='body'>
-      <Switch>
-        <Route path='/music'>
-          <Music />
-        </Route>
-        <Route path='/'>
-          <Calendar />
-        </Route>
-      </Switch>
-    </div>);
+      <div className='pad' />
+      <div className='content'>
+        <Switch>
+          <Route path='/music'>
+            <Music />
+          </Route>
+          <Route path='/'>
+            <Calendar />
+          </Route>
+        </Switch>
+      </div>
+      <div className='pad' />
+    </div>
+  );
 }
 
 export default Body;

@@ -2,9 +2,17 @@
   text-align: center;
   background: url("../images/fh_1.jpg");
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.content {
+  background-color: rgba(0,0,0,.5);
+  color: #eee;
+  margin: auto;
 }
