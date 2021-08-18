@@ -7,3 +7,8 @@
 .calendar td, th{
   padding: .5em;
 }
+
+.modalLogo {
+  height: 40px;
+  margin-left: 50%;
+}
