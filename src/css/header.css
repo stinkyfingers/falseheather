@@ -6,13 +6,11 @@
 }
 
 .logo {
-  width: 10%;
-  min-width: 100px;
+  height: 100px;
 }
 
-.link {
-  padding: 1em;
-  font-size: 2em;
+.facebook {
+  height: 100px
 }
 
 .link:link, .link:visited, .link:active {

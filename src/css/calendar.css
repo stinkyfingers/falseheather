@@ -12,3 +12,8 @@
   height: 40px;
   margin-left: 50%;
 }
+
+tr.event:hover {
+  cursor: pointer;
+  opacity: .5;
+}
