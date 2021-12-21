@@ -90,9 +90,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   custom_error_response {
-    error_code = 404
-    response_code = 200
-    response_page_path = "/index.html"
+    error_caching_min_ttl = 3000
+    error_code            = 404
+    response_code         = 200
+    response_page_path    = "index.html"
   }
 
   restrictions {
