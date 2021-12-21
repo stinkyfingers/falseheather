@@ -89,6 +89,17 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = 31536000
   }
 
+  ordered_cache_behavior = [
+    {
+      path_pattern           = "/music/*"
+      target_origin_id       = "${local.s3_origin_id}"
+      viewer_protocol_policy = "redirect-to-https"
+
+      allowed_methods = ["GET", "HEAD", "OPTIONS"]
+      cached_methods  = ["GET", "HEAD"]
+    }
+  ]
+
   custom_error_response {
     error_caching_min_ttl = 3000
     error_code            = 404
