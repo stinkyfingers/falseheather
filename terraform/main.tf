@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "falseheather" {
     routing_rules = <<EOF
 [{
 "Condition": {
-    "KeyPrefixEquals": "msuic/"
+    "KeyPrefixEquals": "music"
 },
 "Redirect": {
     "ReplaceKeyPrefixWith": "/"
