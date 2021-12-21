@@ -20,4 +20,4 @@ jobs:
       - run: yarn install
       - run: yarn build
       - run: aws s3 sync build s3://falseheather.john-shenk.com
-      - run: aws cloudfront create-invalidation --paths /index.html --distribution-id E1E62A9GMK3VFM
+      - run: aws cloudfront create-invalidation --paths /* --distribution-id E1E62A9GMK3VFM
