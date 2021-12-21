@@ -79,6 +79,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = 31536000
   }
 
+  custom_error_response {
+    error_code = 404
+    response_code = 200
+    response_page_path = "/index.html"
+  }
+
   restrictions {
     geo_restriction {
       restriction_type = "whitelist"
